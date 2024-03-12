@@ -1,8 +1,10 @@
+import { Outlet } from "react-router-dom";
+
 function MainComponent() {
   return (
-    <div>
-      <div>Main Component</div>
-      <p>Here wil be list of products and single page</p>
+    <div className="main">
+      <h2>Here will be your main component</h2>
+      <Outlet />
     </div>
   );
 }

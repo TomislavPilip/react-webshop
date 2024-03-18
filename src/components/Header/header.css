@@ -1,0 +1,103 @@
+header {
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+header .navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .navigation .logo {
+  list-style: none;
+  padding: 2rem;
+  margin-left: 1.5rem;
+  background-color: rgb(13, 94, 165);
+  border-radius: 50%;
+}
+header .navigation .menu {
+  list-style: none;
+  display: flex;
+  padding: 1rem;
+}
+header .navigation .menu li {
+  display: flex;
+  font-weight: 500;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  width: 4rem;
+  transition: all 0.3s ease-in-out;
+}
+header .navigation .menu li:hover {
+  background-color: rgb(31, 31, 31);
+}
+header .navigation .menu li:active {
+  background-color: rgb(50, 50, 50);
+}
+header .navigation .menu li::after {
+  content: "";
+  width: 0px;
+  height: 3px;
+  background-color: #e25822;
+  display: block;
+  transition: width 0.3s ease-in-out;
+  margin-bottom: 2.5px;
+}
+header .navigation .menu li:hover::after {
+  width: 100%;
+}
+
+header .navigation .menu a {
+  color: white;
+  text-decoration: none;
+}
+
+/*SIDEBAR MENU */
+.navigation-toggler {
+  display: none;
+}
+.navigation-toggler button {
+  background-color: black;
+  color: white;
+  border: none;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.navigation-toggler button:active {
+  transform: rotateX(360deg);
+}
+
+@media screen and (max-width: 768px) {
+  .navigation-toggler {
+    display: block;
+    text-align: center;
+    margin-right: 1rem;
+    width: 10rem;
+  }
+  header .navigation {
+    position: relative;
+  }
+  .menu {
+    position: fixed;
+    top: 7vh;
+    right: 0;
+    height: 93vh;
+    background-color: black;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s ease-in;
+    transform: translateX(100%);
+    width: 10rem;
+    z-index: 999;
+  }
+}
+
+/*Navigation active class*/
+.nav-active {
+  transform: translateX(0);
+}
+
+/*Hamburger button animation*/

@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { MainComponent } from "./components/MainComponent/MainComponent";
 import { Footer } from "./components/Footer/Footer";
@@ -11,6 +11,7 @@ import { Page } from "./components/Page/page";
 import { Product } from "./components/Product/Product";
 import { SingleProduct } from "./components/Product/SingleProduct";
 import { Home } from "./components/Home/Home";
+import { Blog } from "./components/Blog/Blog";
 
 function App() {
   ///////Everything is going to be rendered in APPWRAPPERCOMPONENT
@@ -31,6 +32,7 @@ function App() {
               }
             />
             <Route path="/about" element={<Page title={"About us"} />} />
+            <Route path="/blog" element={<Blog />} />
             <Route path="/product" element={<Product />} />
             <Route path="/product/:id" element={<SingleProduct />} />
             <Route />

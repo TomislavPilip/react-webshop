@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #414852;
+  z-index: 1;
+}
+
+section {
+  max-width: 1150px;
+  margin: 0 auto;
+
+  padding-top: 3rem;
+}
+.back_blog_color {
+  background-color: rgb(53, 57, 53, 0.4);
+  padding: 3rem;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  row-gap: 1.5rem;
+}
+.card {
+  /*margin-left: 30px;
+  margin-right: 30px;*/
+  display: flex;
+  background-color: #414852;
+  width: 100%;
+  height: 100%;
+  box-shadow: 10px 10px 10px rgba(34, 35, 58, 0.4),
+    -10px -10px 10px rgba(34, 35, 58, 0.4);
+  border-radius: 25px;
+  padding: 25px;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.card_text {
+  padding: 1rem;
+  color: whitesmoke;
+}
+.image_card {
+  flex: 1;
+}
+.card_info {
+  flex: 2;
+}
+.image_card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card h2 {
+  margin: 30px 0px;
+}
+.card p {
+  opacity: 0.9;
+}
+.card a {
+  opacity: 0;
+  text-decoration: none;
+  padding: 20px 30px 30px 30px;
+  float: right;
+  font-size: 1.2rem;
+  color: #e25822;
+}
+.card:hover a {
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+}
+.label {
+  width: 130px;
+  text-align: center;
+  padding: 7px;
+  border-radius: 18px;
+  background-image: linear-gradient(147deg, #e0934b 0%, #e25822 74%);
+  color: white;
+  transition: background-image 0.5s ease-in-out;
+}
+.card:hover .smartwatches {
+  background-image: linear-gradient(
+    147deg,
+    rgb(197, 48, 105) 0%,
+    rgb(247, 0, 62) 74%
+  );
+}
+.card:hover .luxury {
+  background-image: linear-gradient(
+    147deg,
+    rgb(190, 197, 48) 0%,
+    rgb(207, 166, 15) 74%
+  );
+}
+.card:hover .lifestyle {
+  background-image: linear-gradient(
+    147deg,
+    rgb(224, 66, 18) 0%,
+    rgb(208, 24, 24) 74%
+  );
+}
+@media only screen and (max-width: 850px) {
+  /* .auto-height-iframe {
+    margin-bottom: 500px;
+  }*/
+}
+
+@media only screen and (max-width: 1150px) {
+  .card {
+    flex-direction: column;
+  }
+}

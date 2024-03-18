@@ -16,7 +16,7 @@ export function Header() {
           <li>LOGO</li>
         </ul>
         <ul className={active}>
-          <Link to={"/home"}>
+          <Link to={"/"}>
             <li>
               <span>
                 <Icon
@@ -29,7 +29,7 @@ export function Header() {
               <span>Home</span>
             </li>
           </Link>
-          <Link to={"/products"}>
+          <Link to={"/product"}>
             <li>
               <span>
                 <Icon

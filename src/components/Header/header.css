@@ -82,9 +82,9 @@ header .navigation .menu a {
   }
   .menu {
     position: fixed;
-    top: 7vh;
+    top: 12vh;
     right: 0;
-    height: 93vh;
+    height: 88vh;
     background-color: black;
     flex-direction: column;
     align-items: center;

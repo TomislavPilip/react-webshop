@@ -12,6 +12,7 @@ import { Product } from "./components/Product/Product";
 import { SingleProduct } from "./components/Product/SingleProduct";
 import { Home } from "./components/Home/Home";
 import { Blog } from "./components/Blog/Blog";
+import { Products } from "./components/Product/Products";
 
 function App() {
   ///////Everything is going to be rendered in APPWRAPPERCOMPONENT
@@ -33,7 +34,7 @@ function App() {
             />
             <Route path="/about" element={<Page title={"About us"} />} />
             <Route path="/blog" element={<Blog />} />
-            <Route path="/product" element={<Product />} />
+            <Route path="/product" element={<Products />} />
             <Route path="/product/:id" element={<SingleProduct />} />
             <Route />
           </Route>

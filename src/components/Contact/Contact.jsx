@@ -89,6 +89,14 @@ export function Contact() {
                 <div class="input_box">
                   <button type="submit">Pošalji</button>
                 </div>
+                <div>
+                  <img
+                    src={
+                      "https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1707343848610-16f9afe1ae23"
+                    }
+                    alt=""
+                  />
+                </div>
               </form>
             </div>
           </div>

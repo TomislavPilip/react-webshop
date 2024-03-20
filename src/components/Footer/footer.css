@@ -10,9 +10,10 @@ body {
   margin: 0;
   overflow: auto;
 }
-iframe {
-  opacity: 0.6;
+main {
+  background-color: rgba(122, 57, 57, 0.9);
 }
+
 footer {
   padding: 20px 0px 0px 0px;
   margin: 0 auto;

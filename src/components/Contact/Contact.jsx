@@ -4,7 +4,7 @@ import { Icon } from "@iconify/react";
 export function Contact() {
   return (
     <div className="contact-main-container">
-      <section>
+      <div className="section-container">
         <div class="section">
           <div class="text_content">
             <h1>Kontaktirajte nas</h1>
@@ -93,7 +93,7 @@ export function Contact() {
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </div>
   );
 }

@@ -7,7 +7,6 @@ import { CarouselItem } from "./CarouselItem";
 export function CarouselHome() {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 1600 },
       items: 5,
     },

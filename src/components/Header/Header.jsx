@@ -1,6 +1,7 @@
 import "./header.css";
 import { Icon } from "@iconify/react";
 import Logo from "../../assets/Logo/Tomelogo.webp";
+import { Link } from "react-router-dom";
 
 export function Header() {
   return (
@@ -52,7 +53,7 @@ export function Header() {
           </button>
         </div>
       </div>
-      <nav>
+      <nav className="second-nav">
         <div className="logo">
           <a>
             <img src={Logo} alt="" />
@@ -60,7 +61,7 @@ export function Header() {
         </div>
         <div className="menu">
           <ul>
-            <a>
+            <Link to={"/"}>
               <Icon
                 icon="ic:outline-home"
                 width="1.5em"
@@ -68,7 +69,7 @@ export function Header() {
                 style={{ color: "white" }}
               />
               <li>Home</li>
-            </a>
+            </Link>
             <a>
               <Icon
                 icon="dashicons:products"
@@ -87,7 +88,7 @@ export function Header() {
               />
               <li>Blog</li>
             </a>
-            <a>
+            <Link to={"/contact"}>
               <Icon
                 icon="mdi:contact"
                 width="1.5em"
@@ -95,8 +96,8 @@ export function Header() {
                 style={{ color: "white" }}
               />
               <li>Contact</li>
-            </a>
-            <a>
+            </Link>
+            <Link to={"/about"}>
               <Icon
                 icon="mdi:about"
                 width="1.5em"
@@ -104,7 +105,7 @@ export function Header() {
                 style={{ color: "white" }}
               />
               <li>About</li>
-            </a>
+            </Link>
           </ul>
         </div>
       </nav>

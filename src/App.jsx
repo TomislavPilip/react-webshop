@@ -14,6 +14,7 @@ import { Home } from "./components/Home/Home";
 import { Blog } from "./components/Blog/Blog";
 import { Products } from "./components/Product/Products";
 import { Contact } from "./components/Contact/Contact";
+import { Cart } from "./components/Cart/Cart";
 
 function App() {
   ///////Everything is going to be rendered in APPWRAPPERCOMPONENT
@@ -25,7 +26,7 @@ function App() {
           <Route path="/" element={<AppWrapperComponent />}>
             <Route index element={<Home />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/about" element={<Page title={"About us"} />} />
+            <Route path="/about" element={<Cart />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/product" element={<Products />} />
             <Route path="/product/:id" element={<SingleProduct />} />

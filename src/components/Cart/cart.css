@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@100;400&family=Oswald:wght@600&family=Playfair+Display:ital,wght@0,500;0,900;1,400&family=Poppins&family=Roboto&display=swap");
+
+* {
+  font-family: "Oswald", sans-serif;
+}
+.cart-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  background-color: aliceblue;
+}
+.kosara {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  padding: 30px 0px;
+}
+.left-column {
+  width: 650px;
+}
+.proizvod {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 3px 5px grey;
+  row-gap: 20px;
+}
+.proizvod-slika {
+  padding: 5px;
+  background-color: rgb(194, 210, 232, 0.5);
+}
+
+.proizvod .proizvod-slika img {
+  width: 300px;
+  height: 180px;
+}
+.proizvod-info {
+  padding: 0px 20px 20px 20px;
+  flex: 2;
+}
+.proizvod-info .cijena {
+  padding: 10px 10px 10px 0px;
+}
+
+.right-column {
+  height: 100%;
+  box-shadow: 3px 3px 5px grey;
+  width: 300px;
+  box-sizing: border-box;
+  background: url(../../assets/Basket-images/bikebasket.jpg) rgb(0, 0, 0, 0.8);
+  background-blend-mode: darken;
+  background-position: center;
+  background-size: cover;
+}
+
+.koli-botun {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.koli-botun div:nth-child(1) input {
+  border: none;
+  box-shadow: 1px 1px 2px grey;
+  width: 30px;
+  margin-right: 20px;
+}
+.koli-botun div:nth-child(2) button {
+  padding: 5px 15px;
+  background-color: #e25822;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 2px 2px 3px grey;
+  transition: all 0.5s ease-in-out;
+}
+button span {
+  padding: 0px 3px;
+}
+.koli-botun div:nth-child(2) button:hover {
+  background-color: black;
+  color: #e25822;
+}
+.koli-botun div:nth-child(1) span {
+  font-size: 14px;
+}
+.cijena span:nth-child(1) {
+  font-weight: 600;
+  color: rgb(0, 0, 0, 0.8);
+}
+.cijena span {
+  color: rgb(0, 0, 0, 0.4);
+}
+
+.checkout {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.checkout .price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.5px solid grey;
+  padding-bottom: 14px;
+}
+.checkout .osnovica {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.5px solid grey;
+  padding-bottom: 14px;
+}
+.checkout .porez {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.5px solid grey;
+  padding-bottom: 14px;
+}
+.checkout .ukupno {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 14px;
+}
+a button {
+  padding: 8px 12px;
+  text-shadow: 2px 2px 4px white;
+  color: #e25822;
+  border: none;
+  box-shadow: 2px 2px 3px black;
+  border-radius: 10px;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+a button:hover {
+  transform: scale(1.05);
+  font-size: 14px;
+}

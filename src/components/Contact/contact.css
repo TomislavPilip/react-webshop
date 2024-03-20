@@ -11,7 +11,7 @@ h1 {
   font-family: "Playfair Display", serif;
   margin-top: 0px;
 }
-section {
+.section-container {
   background: url(../../assets/Contact-images/contact-image.jpg)
     rgba(56, 48, 48, 0.9);
   background-blend-mode: darken;

@@ -79,7 +79,7 @@ export function Header() {
               />
               <li>Products</li>
             </a>
-            <a>
+            <Link to={"/blog"}>
               <Icon
                 icon="dashicons:welcome-write-blog"
                 width="1.5em"
@@ -87,7 +87,7 @@ export function Header() {
                 style={{ color: "white" }}
               />
               <li>Blog</li>
-            </a>
+            </Link>
             <Link to={"/contact"}>
               <Icon
                 icon="mdi:contact"

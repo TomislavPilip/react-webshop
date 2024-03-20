@@ -6,35 +6,67 @@ export function Footer() {
     <footer>
       <Container fluid className="p-4 pb-0 bg-dark text-white">
         <Row className="p-3 d-flex justify-content-center">
-          <Col className="col-12  col-md-3 mb-3 d-flex align-items-center flex-column">
-            <h5>Section</h5>
-            <ul className="nav flex-column">
-              <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-white">
-                  Home
-                </a>
-              </li>
-              <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-white">
-                  Features
-                </a>
-              </li>
-              <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-white">
-                  Pricing
-                </a>
-              </li>
-              <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-white">
-                  FAQs
-                </a>
-              </li>
-              <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-white">
-                  About
-                </a>
-              </li>
-            </ul>
+          <Col className="col-12  col-md-5 mb-3 d-flex align-items-center flex-row">
+            <Col className="col-6  col-md-3 me-3  mb-3 d-flex align-items-end flex-column">
+              <h5>Section</h5>
+              <ul className="nav flex-column">
+                <li className="nav-item mb-2">
+                  <a href="#" className="nav-link p-0 text-white">
+                    Home
+                  </a>
+                </li>
+                <li className="nav-item mb-2">
+                  <a href="#" className="nav-link p-0 text-white">
+                    Features
+                  </a>
+                </li>
+                <li className="nav-item mb-2">
+                  <a href="#" className="nav-link p-0 text-white">
+                    Pricing
+                  </a>
+                </li>
+                <li className="nav-item mb-2">
+                  <a href="#" className="nav-link p-0 text-white">
+                    FAQs
+                  </a>
+                </li>
+                <li className="nav-item mb-2">
+                  <a href="#" className="nav-link p-0 text-white">
+                    About
+                  </a>
+                </li>
+              </ul>
+            </Col>
+            <Col className="col-6  col-md-5 mb-3 ms-3 d-flex align-items-start flex-column">
+              <h5>Section</h5>
+              <ul className="nav flex-column">
+                <li className="nav-item mb-2">
+                  <a href="#" className="nav-link p-0 text-white">
+                    Home
+                  </a>
+                </li>
+                <li className="nav-item mb-2">
+                  <a href="#" className="nav-link p-0 text-white">
+                    Features
+                  </a>
+                </li>
+                <li className="nav-item mb-2">
+                  <a href="#" className="nav-link p-0 text-white">
+                    Pricing
+                  </a>
+                </li>
+                <li className="nav-item mb-2">
+                  <a href="#" className="nav-link p-0 text-white">
+                    FAQs
+                  </a>
+                </li>
+                <li className="nav-item mb-2">
+                  <a href="#" className="nav-link p-0 text-white">
+                    About
+                  </a>
+                </li>
+              </ul>
+            </Col>
           </Col>
           <Col className="col-12  col-md-4 mb-3 d-flex justify-content-center">
             <iframe

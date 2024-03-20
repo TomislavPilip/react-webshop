@@ -142,3 +142,16 @@ a button:hover {
   transform: scale(1.05);
   font-size: 14px;
 }
+
+@media only screen and (max-width: 930px) {
+  .kosara {
+    flex-direction: column;
+  }
+  .checkout {
+    width: 100%;
+  }
+  .right-column {
+    width: 60%;
+    margin-top: 20px;
+  }
+}
